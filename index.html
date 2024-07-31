@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container"><video src="main.mp4" autoplay loop muted class="mainui"></video>
+        <div class="dates">
+            <div class="datecon">
+            <img src="Circle+Gif.gif" height="190" class="datecircle1">
+            <img src="Circle+Gif.gif" height="190" class="datecircle2">
+        </div>
+            <p class="date">Date</p>
+        </div>
+
+    <div class="chat">
+        <img src="8FLR.gif" class="ironman" alt="">
+        <p class="conversation">C O N V E R S A T I O N</p>
+        <p class="mainchat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda ipsam eligendi qui modi consectetur iusto architecto incidunt quae. Ducimus vero non alias nesciunt corrupti consequuntur. Libero nam ab magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum placeat officiis, vitae delectus amet ratione repellendus exercitationem debitis voluptatum quia magni accusantium sit ea, eligendi, nam dignissimos quae! Amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi rem nobis rerum vel voluptatum et, error delectus hic officia exercitationem, vitae doloremque facilis quod ex voluptate ratione quisquam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ea optio pariatur voluptatum, velit, impedit corporis qui aliquam ab harum laborum ullam minus! Molestias, nam. Quas maiores deserunt velit doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda ipsam eligendi qui modi consectetur iusto architecto incidunt quae. Ducimus vero non alias nesciunt corrupti consequuntur. Libero nam ab magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum placeat officiis, vitae delectus amet ratione repellendus exercitationem debitis voluptatum quia magni accusantium sit ea, eligendi, nam dignissimos quae! Amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi rem nobis rerum vel voluptatum et, error delectus hic officia exercitationem, vitae doloremque facilis quod ex voluptate ratione quisquam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ea optio pariatur voluptatum, velit, impedit corporis qui aliquam ab harum laborum ullam minus! Molestias, nam. Quas maiores deserunt velit doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda ipsam eligendi qui modi consectetur iusto architecto incidunt quae. Ducimus vero non alias nesciunt corrupti consequuntur. Libero nam ab magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum placeat officiis, vitae delectus amet ratione repellendus exercitationem debitis voluptatum quia magni accusantium sit ea, eligendi, nam dignissimos quae! Amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi rem nobis rerum vel voluptatum et, error delectus hic officia exercitationem, vitae doloremque facilis quod ex voluptate ratione quisquam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ea optio pariatur voluptatum, velit, impedit corporis qui aliquam ab harum laborum ullam minus! Molestias, nam. Quas maiores deserunt velit doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda ipsam eligendi qui modi consectetur iusto architecto incidunt quae. Ducimus vero non alias nesciunt corrupti consequuntur. Libero nam ab magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum placeat officiis, vitae delectus amet ratione repellendus exercitationem debitis voluptatum quia magni accusantium sit ea, eligendi, nam dignissimos quae! Amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi rem nobis rerum vel voluptatum et, error delectus hic officia exercitationem, vitae doloremque facilis quod ex voluptate ratione quisquam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ea optio pariatur voluptatum, velit, impedit corporis qui aliquam ab harum laborum ullam minus! Molestias, nam. Quas maiores deserunt velit doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda ipsam eligendi qui modi consectetur iusto architecto incidunt quae. Ducimus vero non alias nesciunt corrupti consequuntur. Libero nam ab magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum placeat officiis, vitae delectus amet ratione repellendus exercitationem debitis voluptatum quia magni accusantium sit ea, eligendi, nam dignissimos quae! Amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, commodi rem nobis rerum vel voluptatum et, error delectus hic officia exercitationem, vitae doloremque facilis quod ex voluptate ratione quisquam veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ea optio pariatur voluptatum, velit, impedit corporis qui aliquam ab harum laborum ullam minus! Molestias, nam. Quas maiores deserunt velit doloribus.</p>
+    </div>
+    <img class="sound_wave" src="sound_wave.gif" height="220" alt="">
+    <img class="sound_wave" src="wave_sound1.gif" height="200" alt="" style="left: 170px; top:20px">
+    <img class="sound_wave" src="wave_sound1.gif" height="200" alt="" style="left:-20px; top:200px;z-index:2">
+    <img class="sound_wave" src="blood_wave.gif" height="120" alt="" style="left:50px; top:240px;z-index:1">
+
+    <img class="sound_wave" src="head.gif" height="230" alt="" style="left:200px; top:200px">
+    <img src="Circle+Gif.gif" height="190" class="datecircle3">
+    <p class="time">Time</p>
+    <img src="d728264b7433e62b7c4572c8d129e9be.gif" class="micwave" alt="">
+    <img src="mic.webp"class="mic" alt="">
+    </div>
+    
+    <script>
+        var date=document.getElementsByClassName("date")[0];
+        var times=document.getElementsByClassName("time")[0];
+
+        
+        
+        
+        setInterval(function(){
+            var time=new Date();
+            var alldate=time.getDate()+" / "+(time.getMonth()+1)+" / "+time.getFullYear();
+            console.log(alldate);
+            date.innerHTML=alldate;
+            var hr=time.getHours();
+            var ampm=hr>=12?"PM":"AM";
+            if(hr>12){
+                hr=hr-12;
+            }
+            var alltime=hr+" : "+time.getMinutes()+" : "+time.getSeconds()+ " "+ampm;
+            times.innerHTML=alltime;
+        },1000)
+    </script>
+</body>
+</html>
